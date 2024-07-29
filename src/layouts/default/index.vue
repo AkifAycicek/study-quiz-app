@@ -10,7 +10,7 @@
       </QLoader>
     </main>
     <footer class="bg-light text-center p-3 mt-3">
-      {{ $t('Developed by') }}
+      {{ $t('developed_by') }}
       <a target="_blank" href="https://www.akifaycicek.com.tr"> Akif Ayçiçek </a>
       😎
       <div>
