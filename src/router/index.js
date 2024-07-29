@@ -1,4 +1,4 @@
-import { availableLocales, guessUserLocale, localeMiddleware } from '@plugins/i18n';
+import { availableLocales, guessUserLocale } from '@plugins/i18n';
 import { createRouter, createWebHashHistory } from 'vue-router';
 
 // layouts
@@ -33,7 +33,15 @@ const router = createRouter({
 });
 
 router.beforeEach((to, from, next) => {
-  localeMiddleware(to, from, next);
+  const toLocale = get(to, 'params.locale');
+  if (!availableLocales.includes(toLocale)) {
+    return next({
+      ...to,
+      params: { ...to.params, locale: locale.value },
+    });
+  }
+  if (locale.value != toLocale) locale.value = toLocale;
+  next();
 });
 
 export default router;

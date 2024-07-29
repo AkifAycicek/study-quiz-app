@@ -42,17 +42,4 @@ watch(
   },
   { immediate: true },
 );
-
-export const localeMiddleware = (to, from, next) => {
-  const toLocale = get(to, 'params.locale');
-  if (!availableLocales.includes(toLocale)) {
-    return next({
-      ...to,
-      params: { ...to.params, locale: locale.value },
-    });
-  }
-  if (locale.value != toLocale) locale.value = toLocale;
-  next();
-};
-
 export default i18n;
