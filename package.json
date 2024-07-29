@@ -7,7 +7,8 @@
     "build": "vite build",
     "preserve": "vite build",
     "preview": "vite preview --port 6134",
-    "lint": "eslint --fix  ./**/*.{vue,js,jsx} && stylelint ./**/*.{css,scss,vue} --fix"
+    "lint": "eslint --fix  ./**/*.{vue,js,jsx} && stylelint ./**/*.{css,scss,vue} --fix",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "@popperjs/core": "^2.11.8",
