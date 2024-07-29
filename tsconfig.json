@@ -19,6 +19,7 @@
       "@style/*": ["src/style/*"],
       "@plugins/*": ["src/plugins/*"],
       "@components/*": ["src/components/*"],
+      "@libs/*": ["src/libs/*"],
       "@/*": ["src/*"]
     },
     "allowSyntheticDefaultImports": false
