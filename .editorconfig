@@ -1,0 +1,19 @@
+# top-most EditorConfig file
+root = true
+
+# Newlines with a newline ending every file
+[*]
+insert_final_newline = true
+
+# Set default charset
+[*.{js,scss,vue}]
+charset = utf-8
+
+
+# 2 space indentation
+[*.{vue,scss,js}]
+indent_style = space
+indent_size = 2
+
+# Quote Settings
+quote_type = double

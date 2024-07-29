@@ -1,0 +1,40 @@
+// Config
+$enable-shadows: true;
+
+// Spacing
+$spacer: $spacer;
+$spacers: (
+  0: 0,
+  1: $spacer * 0.25,
+  2: $spacer * 0.5,
+  3: $spacer * 0.75,
+  4: $spacer * 1,
+  5: $spacer * 1.5,
+  6: $spacer * 2,
+  7: $spacer * 2.5,
+  8: $spacer * 3,
+  9: $spacer * 3.5,
+  10: $spacer * 4,
+);
+
+// Colors
+$primary: #78350f;
+$secondary: #334155;
+$theme-colors-custom: (
+  'primary': $primary,
+  'secondary': $secondary,
+);
+$all-colors: map-merge-multiple(
+  // $blues,
+  // $indigos,
+  // $purples,
+  // $pinks,
+  // $reds,
+  // $oranges,
+  // $yellows,
+  // $greens,
+  // $teals,
+  // $cyans,
+  $grays
+);
+$theme-colors: map-merge-multiple($theme-colors, $theme-colors-custom, $all-colors);
