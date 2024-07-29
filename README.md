@@ -1,5 +1,7 @@
 # Quiz App
 
+## See [Demo](https://akifaycicek.github.io/study-quiz-app/).
+
 #### 🔃 Prepare the app before development or preview
 
 `yarn install` | `npm install`
