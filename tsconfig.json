@@ -20,6 +20,9 @@
       "@plugins/*": ["src/plugins/*"],
       "@components/*": ["src/components/*"],
       "@libs/*": ["src/libs/*"],
+      "@models/*": ["src/services/models/*"],
+      "@api/*": ["src/services/api/*"],
+      "@dto/*": ["src/services/DTO/*"],
       "@/*": ["src/*"]
     },
     "allowSyntheticDefaultImports": false
