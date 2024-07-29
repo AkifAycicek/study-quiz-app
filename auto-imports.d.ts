@@ -16,6 +16,7 @@ declare global {
   const assignWith: typeof import('lodash')['assignWith']
   const at: typeof import('lodash')['at']
   const attempt: typeof import('lodash')['attempt']
+  const availableLocales: typeof import('@plugins/i18n')['availableLocales']
   const before: typeof import('lodash')['before']
   const bind: typeof import('lodash')['bind']
   const bindAll: typeof import('lodash')['bindAll']
@@ -111,6 +112,7 @@ declare global {
   const has: typeof import('lodash')['has']
   const hasIn: typeof import('lodash')['hasIn']
   const head: typeof import('lodash')['head']
+  const i18n: typeof import('@plugins/i18n')['default']
   const identity: typeof import('lodash')['identity']
   const inRange: typeof import('lodash')['inRange']
   const includes: typeof import('lodash')['includes']
@@ -173,6 +175,7 @@ declare global {
   const keysIn: typeof import('lodash')['keysIn']
   const last: typeof import('lodash')['last']
   const lastIndexOf: typeof import('lodash')['lastIndexOf']
+  const locale: typeof import('@plugins/i18n')['locale']
   const lowerCase: typeof import('lodash')['lowerCase']
   const lowerFirst: typeof import('lodash')['lowerFirst']
   const lt: typeof import('lodash')['lt']
@@ -295,6 +298,7 @@ declare global {
   const subtract: typeof import('lodash')['subtract']
   const sum: typeof import('lodash')['sum']
   const sumBy: typeof import('lodash')['sumBy']
+  const t: typeof import('@plugins/i18n')['t']
   const tail: typeof import('lodash')['tail']
   const take: typeof import('lodash')['take']
   const takeRight: typeof import('lodash')['takeRight']
@@ -391,6 +395,7 @@ declare module 'vue' {
     readonly assignWith: UnwrapRef<typeof import('lodash')['assignWith']>
     readonly at: UnwrapRef<typeof import('lodash')['at']>
     readonly attempt: UnwrapRef<typeof import('lodash')['attempt']>
+    readonly availableLocales: UnwrapRef<typeof import('@plugins/i18n')['availableLocales']>
     readonly before: UnwrapRef<typeof import('lodash')['before']>
     readonly bind: UnwrapRef<typeof import('lodash')['bind']>
     readonly bindAll: UnwrapRef<typeof import('lodash')['bindAll']>
@@ -486,6 +491,7 @@ declare module 'vue' {
     readonly has: UnwrapRef<typeof import('lodash')['has']>
     readonly hasIn: UnwrapRef<typeof import('lodash')['hasIn']>
     readonly head: UnwrapRef<typeof import('lodash')['head']>
+    readonly i18n: UnwrapRef<typeof import('@plugins/i18n')['default']>
     readonly identity: UnwrapRef<typeof import('lodash')['identity']>
     readonly inRange: UnwrapRef<typeof import('lodash')['inRange']>
     readonly includes: UnwrapRef<typeof import('lodash')['includes']>
@@ -548,6 +554,7 @@ declare module 'vue' {
     readonly keysIn: UnwrapRef<typeof import('lodash')['keysIn']>
     readonly last: UnwrapRef<typeof import('lodash')['last']>
     readonly lastIndexOf: UnwrapRef<typeof import('lodash')['lastIndexOf']>
+    readonly locale: UnwrapRef<typeof import('@plugins/i18n')['locale']>
     readonly lowerCase: UnwrapRef<typeof import('lodash')['lowerCase']>
     readonly lowerFirst: UnwrapRef<typeof import('lodash')['lowerFirst']>
     readonly lt: UnwrapRef<typeof import('lodash')['lt']>
@@ -670,6 +677,7 @@ declare module 'vue' {
     readonly subtract: UnwrapRef<typeof import('lodash')['subtract']>
     readonly sum: UnwrapRef<typeof import('lodash')['sum']>
     readonly sumBy: UnwrapRef<typeof import('lodash')['sumBy']>
+    readonly t: UnwrapRef<typeof import('@plugins/i18n')['t']>
     readonly tail: UnwrapRef<typeof import('lodash')['tail']>
     readonly take: UnwrapRef<typeof import('lodash')['take']>
     readonly takeRight: UnwrapRef<typeof import('lodash')['takeRight']>
@@ -759,6 +767,7 @@ declare module '@vue/runtime-core' {
     readonly assignWith: UnwrapRef<typeof import('lodash')['assignWith']>
     readonly at: UnwrapRef<typeof import('lodash')['at']>
     readonly attempt: UnwrapRef<typeof import('lodash')['attempt']>
+    readonly availableLocales: UnwrapRef<typeof import('@plugins/i18n')['availableLocales']>
     readonly before: UnwrapRef<typeof import('lodash')['before']>
     readonly bind: UnwrapRef<typeof import('lodash')['bind']>
     readonly bindAll: UnwrapRef<typeof import('lodash')['bindAll']>
@@ -854,6 +863,7 @@ declare module '@vue/runtime-core' {
     readonly has: UnwrapRef<typeof import('lodash')['has']>
     readonly hasIn: UnwrapRef<typeof import('lodash')['hasIn']>
     readonly head: UnwrapRef<typeof import('lodash')['head']>
+    readonly i18n: UnwrapRef<typeof import('@plugins/i18n')['default']>
     readonly identity: UnwrapRef<typeof import('lodash')['identity']>
     readonly inRange: UnwrapRef<typeof import('lodash')['inRange']>
     readonly includes: UnwrapRef<typeof import('lodash')['includes']>
@@ -916,6 +926,7 @@ declare module '@vue/runtime-core' {
     readonly keysIn: UnwrapRef<typeof import('lodash')['keysIn']>
     readonly last: UnwrapRef<typeof import('lodash')['last']>
     readonly lastIndexOf: UnwrapRef<typeof import('lodash')['lastIndexOf']>
+    readonly locale: UnwrapRef<typeof import('@plugins/i18n')['locale']>
     readonly lowerCase: UnwrapRef<typeof import('lodash')['lowerCase']>
     readonly lowerFirst: UnwrapRef<typeof import('lodash')['lowerFirst']>
     readonly lt: UnwrapRef<typeof import('lodash')['lt']>
@@ -1038,6 +1049,7 @@ declare module '@vue/runtime-core' {
     readonly subtract: UnwrapRef<typeof import('lodash')['subtract']>
     readonly sum: UnwrapRef<typeof import('lodash')['sum']>
     readonly sumBy: UnwrapRef<typeof import('lodash')['sumBy']>
+    readonly t: UnwrapRef<typeof import('@plugins/i18n')['t']>
     readonly tail: UnwrapRef<typeof import('lodash')['tail']>
     readonly take: UnwrapRef<typeof import('lodash')['take']>
     readonly takeRight: UnwrapRef<typeof import('lodash')['takeRight']>

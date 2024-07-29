@@ -22,6 +22,10 @@ export default defineConfig({
         'vue',
         'vue-router',
         {
+          from: '@plugins/i18n',
+          imports: ['t', 'locale', 'availableLocales', ['default', 'i18n']],
+        },
+        {
           from: 'lodash',
           imports: lodash.keys(
             lodash.fromPairs(

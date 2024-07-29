@@ -373,6 +373,10 @@
     "zip": true,
     "zipObject": true,
     "zipObjectDeep": true,
-    "zipWith": true
+    "zipWith": true,
+    "availableLocales": true,
+    "i18n": true,
+    "locale": true,
+    "t": true
   }
 }
