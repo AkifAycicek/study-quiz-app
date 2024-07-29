@@ -36,7 +36,6 @@ export class Exam extends BaseModel {
     this.startedAt = new Date().toLocaleString(locale);
 
     while (this.startedAt && this.currentQuestion) {
-      console.log(this.currentQuestion.remainingTime);
       this.currentQuestion.start();
       await this.currentQuestion.done;
     }
